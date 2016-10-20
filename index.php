@@ -30,6 +30,7 @@ function solution($integerX, $arrayA)
         if ($item === $integerX) {
             $XElementsAmount++;
         }
+
     }
 
     if ($XElementsAmount == 1 && $integerX == $arrayA[$elementsAmount - 1]) {
