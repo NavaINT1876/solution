@@ -4,12 +4,22 @@ $integerX = 6;
 
 $arrayA = [
     6,
+    7,
+    4,
+    1,
     6,
     1,
     8,
     2,
     3,
     6
+//    6,
+//    6,
+//    1,
+//    8,
+//    2,
+//    3,
+//    6
 ];
 
 /**
@@ -39,7 +49,7 @@ function solution($integerX, $arrayA)
         return $arrayA[$elementsAmount - 2];
     } else {
 
-        $equalsAmoult = 0;
+        $equalsAmount = 0;
         $notEqualsAmount = 0;
 
         $firstArr = array_chunk($arrayA, ceil($elementsAmount / 2), true)[0];
@@ -47,7 +57,7 @@ function solution($integerX, $arrayA)
 
         foreach ($firstArr as $fItem) {
             if ($fItem == $integerX) {
-                $equalsAmoult++;
+                $equalsAmount++;
             }
         }
 
@@ -57,8 +67,18 @@ function solution($integerX, $arrayA)
             }
         }
 
-        if($equalsAmoult == $notEqualsAmount){
-            return count($firstArr)-1;
+        if ($equalsAmount == $notEqualsAmount) {
+            return count($firstArr) - 1;
+        } elseif ($equalsAmount < $notEqualsAmount) {
+            while ($equalsAmount < $notEqualsAmount) {
+                $firstElemOfSecondArr = array_shift($secondArr);
+                array_push($firstArr, $firstElemOfSecondArr);
+                if ($firstElemOfSecondArr == $integerX) {
+                    $equalsAmount++;
+                } else {
+                    $notEqualsAmount--;
+                }
+            }
         }
 
         echo "<pre>";

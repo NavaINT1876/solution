@@ -27,8 +27,8 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="59" column="36" selection-start-line="59" selection-start-column="36" selection-end-line="59" selection-end-column="36" />
+            <state relative-caret-position="-296">
+              <caret line="62" column="0" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -172,7 +172,7 @@
       <option name="presentableId" value="Default" />
       <updated>1476977090558</updated>
       <workItem from="1476977092288" duration="7336000" />
-      <workItem from="1477033082760" duration="4202000" />
+      <workItem from="1477033082760" duration="5940000" />
     </task>
     <task id="LOCAL-00001" summary="sdfsdf">
       <created>1476992665205</created>
@@ -181,11 +181,18 @@
       <option name="project" value="LOCAL" />
       <updated>1476992665205</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="sdfsdf2">
+      <created>1477038228122</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1477038228122</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11538000" />
+    <option name="totallyTimeSpent" value="13276000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -225,7 +232,8 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="sdfsdf" />
-    <option name="LAST_COMMIT_MESSAGE" value="sdfsdf" />
+    <MESSAGE value="sdfsdf2" />
+    <option name="LAST_COMMIT_MESSAGE" value="sdfsdf2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -243,8 +251,8 @@
     <entry file="file://$PROJECT_DIR$/.idea/index.php" />
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="59" column="36" selection-start-line="59" selection-start-column="36" selection-end-line="59" selection-end-column="36" />
+        <state relative-caret-position="-296">
+          <caret line="62" column="0" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
           <folding />
         </state>
       </provider>
