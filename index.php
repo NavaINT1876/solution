@@ -55,7 +55,7 @@ function solution($integerX, $arrayA)
     if ($XElementsAmount == 1 && $integerX == $arrayA[$elementsAmount - 1]) {
         return -1;
     } elseif ($XElementsAmount == 1 && $integerX != $arrayA[$elementsAmount - 1]) {
-        return $arrayA[$elementsAmount - 2];
+        return $arrayA[$elementsAmount - 1];
     } else {
         $equalsAmount = 0;
         $notEqualsAmount = 0;
@@ -76,7 +76,7 @@ function solution($integerX, $arrayA)
         }
 
         if ($equalsAmount == $notEqualsAmount) {
-            return count($firstArr) - 1;
+            return count($firstArr);
         } elseif ($equalsAmount < $notEqualsAmount) {
             while ($equalsAmount < $notEqualsAmount) {
                 $firstElemOfSecondArr = array_shift($secondArr);
@@ -104,7 +104,7 @@ function solution($integerX, $arrayA)
             return -1;
         }
 
-        return count($firstArr) - 1;
+        return count($firstArr);
     }
 }
 
