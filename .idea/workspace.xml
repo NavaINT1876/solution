@@ -27,8 +27,8 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-296">
-              <caret line="62" column="0" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+            <state relative-caret-position="672">
+              <caret line="110" column="34" selection-start-line="110" selection-start-column="34" selection-end-line="110" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -172,7 +172,7 @@
       <option name="presentableId" value="Default" />
       <updated>1476977090558</updated>
       <workItem from="1476977092288" duration="7336000" />
-      <workItem from="1477033082760" duration="5940000" />
+      <workItem from="1477033082760" duration="9142000" />
     </task>
     <task id="LOCAL-00001" summary="sdfsdf">
       <created>1476992665205</created>
@@ -188,11 +188,18 @@
       <option name="project" value="LOCAL" />
       <updated>1477038228122</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="refactored a bit">
+      <created>1477039966023</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1477039966023</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13276000" />
+    <option name="totallyTimeSpent" value="16478000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -233,7 +240,8 @@
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="sdfsdf" />
     <MESSAGE value="sdfsdf2" />
-    <option name="LAST_COMMIT_MESSAGE" value="sdfsdf2" />
+    <MESSAGE value="refactored a bit" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactored a bit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -249,10 +257,18 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.idea/index.php" />
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/standard_8.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="1056" column="9" selection-start-line="1056" selection-start-column="9" selection-end-line="1056" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-296">
-          <caret line="62" column="0" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+        <state relative-caret-position="672">
+          <caret line="110" column="34" selection-start-line="110" selection-start-column="34" selection-end-line="110" selection-end-column="34" />
           <folding />
         </state>
       </provider>
