@@ -39,6 +39,38 @@ function solution($integerX, $arrayA)
         return $arrayA[$elementsAmount - 2];
     } else {
 
+        $equalsAmoult = 0;
+        $notEqualsAmount = 0;
+
+        $firstArr = array_chunk($arrayA, ceil($elementsAmount / 2), true)[0];
+        $secondArr = array_chunk($arrayA, ceil($elementsAmount / 2), true)[1];
+
+        foreach ($firstArr as $fItem) {
+            if ($fItem == $integerX) {
+                $equalsAmoult++;
+            }
+        }
+
+        foreach ($secondArr as $sItem) {
+            if ($sItem != $integerX) {
+                $notEqualsAmount++;
+            }
+        }
+
+        if($equalsAmoult == $notEqualsAmount){
+            return count($firstArr)-1;
+        }
+
+        echo "<pre>";
+
+
+        print_r($firstArr);
+        print_r($secondArr);
+
+        foreach ($arrayA as $element) {
+        }
+
+
     }
 
 
