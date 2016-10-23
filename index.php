@@ -6,19 +6,24 @@ define('MAXIMUM_X', 100000);
 /**
  * An integer X
  */
-$integerX = 6;
+$integerX = 9;
 
 /**
  * A non-empty zero-indexed array A
  */
 $arrayA = [
-    6,
-    6,
+    12,
+    12,
     1,
-    8,
+    10,
     2,
+    9,
+    13,
+    6,
+    13,
     3,
-    6
+    12,
+    12
 ];
 
 /**
@@ -29,23 +34,16 @@ $arrayA = [
  */
 function solution($integerX, $arrayA)
 {
-    if (!in_array($integerX, $arrayA)) {
-        exit('There is no such element of "' . $integerX . '" in the array.');
-    }
-
-    if (!is_int($integerX) || $integerX < MINIMUM_X || $integerX > MAXIMUM_X) {
-        exit('Integer X must be an integer within the range [' . MINIMUM_X . '..' . MAXIMUM_X . ']');
+    if (!in_array($integerX, $arrayA) || !is_int($integerX) || $integerX < MINIMUM_X || $integerX > MAXIMUM_X) {
+        return -1;
     }
 
     $elementsAmount = count($arrayA);
 
     $XElementsAmount = 0;
     foreach ($arrayA as $key => $item) {
-        if (!is_int($item)) {
-            exit('All elements of the array must be integer. Element with index "' . $key . '" is not integer.');
-        }
-        if ($item < MINIMUM_X || $item > MAXIMUM_X) {
-            exit('Each element of array A must be an integer within the range [' . MINIMUM_X . '..' . MAXIMUM_X . ']');
+        if (!is_int($item) || $item < MINIMUM_X || $item > MAXIMUM_X) {
+            return -1;
         }
         if ($item === $integerX) {
             $XElementsAmount++;
@@ -55,7 +53,7 @@ function solution($integerX, $arrayA)
     if ($XElementsAmount == 1 && $integerX == $arrayA[$elementsAmount - 1]) {
         return -1;
     } elseif ($XElementsAmount == 1 && $integerX != $arrayA[$elementsAmount - 1]) {
-        return $arrayA[$elementsAmount - 1];
+        return count($arrayA) - 1;
     } else {
         $equalsAmount = 0;
         $notEqualsAmount = 0;
